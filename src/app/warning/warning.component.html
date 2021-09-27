@@ -1,0 +1,18 @@
+<h4 class="bg-warning text-center">THIS IS A WARNING</h4>
+<div class="container">
+  <!-- <p class="bg-black text-danger text-center fs-4">something has gone terribly wrong</p> -->
+  <input
+  type="text"
+  class="form-control"
+  [(ngModel)]="userName">
+  <button
+  class="btn btn-warning"
+  type="button"
+  (click)="onCreateUser()"
+  [disabled]="userName.length === 0">
+  Reset User Name</button>
+  <p>{{userName}}</p>
+</div>
+
+<!-- [disabled]="userName === ''"> -->
+<!-- [disabled]="!userName> -->
